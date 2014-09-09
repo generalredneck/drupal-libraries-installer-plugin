@@ -4,9 +4,9 @@
   "authors": [
     {
       "name": "Allan Chappell",
-      "email": "generalredneck@gmail.com",
+      "email": "generalredneck@gmail.com"
     }
-  ]
+  ],
   "autoload": {
     "psr-0": {"Drupal\\Composer": "src/"}
   },

@@ -12,15 +12,9 @@ class DrupalLibraryInstaller extends LibraryInstaller
      */
     public function getPackageBasePath(PackageInterface $package)
     {
-        var_dump($this->composer->getConfig());
-        return 'data/templates/'.substr($package->getPrettyName(), 23);
+        //var_dump($this->composer->getConfig());
+        var_dump($this->composer->getExtra());
+        return parent::getPackageBasePath($package);
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    public function supports($packageType)
-    {
-        return 'phpdocumentor-template' === $packageType;
-    }
 }
