@@ -37,5 +37,4 @@ class DrupalLibraryInstaller extends LibraryInstaller
       }
       return $path;
     }
-
 }
