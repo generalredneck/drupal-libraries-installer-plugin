@@ -1,0 +1,19 @@
+{
+  "name": "drupal/drupal-library-installer-plugin",
+  "type": "composer-plugin",
+  "authors": [
+    {
+      "name": "Allan Chappell",
+      "email": "generalredneck@gmail.com",
+    }
+  ]
+  "autoload": {
+    "psr-0": {"Drupal\\Composer": "src/"}
+  },
+  "extra": {
+    "class": "Drupal\\Composer\\DrupalLibraryInstallerPlugin"
+  },
+  "require": {
+    "composer-plugin-api": "1.0.0"
+  }
+}
