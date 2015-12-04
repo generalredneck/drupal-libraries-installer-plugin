@@ -27,10 +27,10 @@ class DrupalLibraryInstaller extends LibraryInstaller
     /**
      * {@inheritDoc}
      */
-    public function getPackageBasePath(PackageInterface $package)
+    public function getInstallPath(PackageInterface $package)
     {
       if (empty($this->drupalLibraryMap[$package->getPrettyName()])) {
-        $path = parent::getPackageBasePath($package);
+        $path = parent::getInstallPath($package);
       }
       else {
         $path = $this->drupalLibrariesPath . $this->drupalLibraryMap[$package->getPrettyName()];
