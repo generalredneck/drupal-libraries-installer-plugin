@@ -15,5 +15,8 @@
   },
   "require": {
     "composer-plugin-api": "^1.0"
-  }
+  },
+  "abandoned": "oomphinc/composer-installers-extender"
+
+
 }
